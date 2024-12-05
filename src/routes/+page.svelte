@@ -70,8 +70,8 @@
 	});
 
 	async function fetchLastUpdatedTime() {
-		const username = 'yt-dlp';
-		const repo = 'yt-dlp';
+		const username = 'MeowCatsAreCool21';
+		const repo = 'conference';
 		const url = `https://api.github.com/repos/${username}/${repo}/commits`;
 
 		try {
