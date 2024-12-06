@@ -18,14 +18,11 @@
 	let abstractwords = 0;
 
 	function calculateAbstractWordCount() {
-		// Get the abstract content area
 		const abstract = document.querySelector('#abstract');
 
 		if (abstract) {
-			// Extract the text content from the abstract
 			const text = abstract.textContent || '';
 
-			// Split the text into words and count them
 			abstractwords = text.split(/\s+/).filter((word) => word.length > 0).length;
 			return abstractwords;
 		}
@@ -38,14 +35,13 @@
 		const ppt = document.querySelector('#ppt');
 
 		if (content) {
-			// Get headers, paragraphs, table rows, and figure captions
 			const elements = Array.from(
 				content.querySelectorAll('h2, h3, h4, h5, h6, p, table th, table td, figcaption')
 			).filter(
 				(el) =>
 					!references?.contains(el) && // Exclude references
-					!abstract?.contains(el) &&
-					!ppt?.contains(el) // Exclude abstract
+					!abstract?.contains(el) && // Exclude abstract
+					!ppt?.contains(el) // Exclude PPT
 			);
 
 			const text = elements.map((el) => el.textContent).join(' ');
@@ -100,7 +96,7 @@
 	function updateHeaders() {
 		headers = Array.from(document.querySelectorAll('h2')).map((h2) => {
 			const id = h2.id || generateId(h2.textContent);
-			if (!h2.id) h2.id = id; // Ensure the header has an ID
+			if (!h2.id) h2.id = id; 
 			return { id, text: h2.textContent };
 		});
 	}
