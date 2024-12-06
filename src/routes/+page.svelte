@@ -96,7 +96,7 @@
 	function updateHeaders() {
 		headers = Array.from(document.querySelectorAll('h2')).map((h2) => {
 			const id = h2.id || generateId(h2.textContent);
-			if (!h2.id) h2.id = id; 
+			if (!h2.id) h2.id = id;
 			return { id, text: h2.textContent };
 		});
 	}
@@ -900,9 +900,8 @@
 	}
 
 	.reference-list a:hover {
-		text-decoration: none; 
+		text-decoration: none;
 	}
-
 
 	#ppt video {
 		max-width: 100%;
