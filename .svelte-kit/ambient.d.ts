@@ -48,7 +48,7 @@ declare module '$env/static/private' {
 	export const DATASPELL_VM_OPTIONS: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_15120: string;
+	export const EFC_6792: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const FR_CUSTOMDATA_PATH: string;
@@ -73,8 +73,6 @@ declare module '$env/static/private' {
 	export const LOGONSERVER: string;
 	export const NODE: string;
 	export const NODE_ENV: string;
-	export const NODE_EXE: string;
-	export const NPM_CLI_JS: string;
 	export const npm_command: string;
 	export const npm_config_cache: string;
 	export const npm_config_engine_strict: string;
@@ -95,8 +93,6 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const npm_package_name: string;
 	export const npm_package_version: string;
-	export const NPM_PREFIX_JS: string;
-	export const NPM_PREFIX_NPM_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
 	export const NVAFX_SDK_DIR: string;
 	export const OANOCACHE: string;
@@ -201,7 +197,7 @@ declare module '$env/dynamic/private' {
 		DATASPELL_VM_OPTIONS: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_15120: string;
+		EFC_6792: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
 		FR_CUSTOMDATA_PATH: string;
@@ -226,8 +222,6 @@ declare module '$env/dynamic/private' {
 		LOGONSERVER: string;
 		NODE: string;
 		NODE_ENV: string;
-		NODE_EXE: string;
-		NPM_CLI_JS: string;
 		npm_command: string;
 		npm_config_cache: string;
 		npm_config_engine_strict: string;
@@ -248,8 +242,6 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		npm_package_name: string;
 		npm_package_version: string;
-		NPM_PREFIX_JS: string;
-		NPM_PREFIX_NPM_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
 		NVAFX_SDK_DIR: string;
 		OANOCACHE: string;
